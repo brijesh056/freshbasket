@@ -38,8 +38,8 @@ export default function Footer() {
 
         <div className="footer-contact">
           <h4>Contact Us</h4>
-          <div className="contact-item"><FiPhone /><span>+91 98765 43210</span></div>
-          <div className="contact-item"><FiMail /><span>support@freshbasket.in</span></div>
+          <div className="contact-item"><FiPhone /><span>+91 6355968165</span></div>
+          <div className="contact-item"><FiMail /><span>konkanibrijesh999@gmail.com</span></div>
           <div className="contact-item"><FiMapPin /><span>Surat, Gujarat, India</span></div>
           <div className="payment-icons">
             <span className="pay-icon">💳</span>
