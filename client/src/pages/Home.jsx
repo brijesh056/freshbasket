@@ -80,7 +80,7 @@ export default function Home() {
             </div>
             <span className="promo-emoji">🍎</span>
           </div>
-          <div className="promo-card orange" onClick={() => navigate('/products?category=Dairy & Milk')}>
+          <div className="promo-card orange" onClick={() => navigate(`/products?category=${encodeURIComponent('Dairy & Milk')}`)}>
             <div className="promo-text">
               <p className="promo-subtitle">Farm Fresh</p>
               <h3>Dairy & Milk</h3>
@@ -112,7 +112,7 @@ export default function Home() {
         </div>
         <div className="categories-grid">
           {categories.map((cat) => (
-            <Link to={`/products?category=${cat.name}`} key={cat._id} className="category-card">
+            <Link to={`/products?category=${encodeURIComponent(cat.name)}`} key={cat._id} className="category-card">
               <span className="cat-icon">{CATEGORY_ICONS[cat.name] || cat.icon || '🛒'}</span>
               <p className="cat-name">{cat.name}</p>
             </Link>

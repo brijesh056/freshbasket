@@ -23,8 +23,7 @@ export default function Footer() {
           <Link to="/">Home</Link>
           <Link to="/products">Products</Link>
           <Link to="/products?category=Fruits">Fruits & Vegetables</Link>
-          <Link to="/products?category=Dairy & Milk">Dairy & Milk</Link>
-          <Link to="/products?featured=true">Featured Products</Link>
+<Link to={`/products?category=${encodeURIComponent('Dairy & Milk')}`}>Dairy & Milk</Link>          <Link to="/products?featured=true">Featured Products</Link>
         </div>
 
         <div className="footer-links">
