@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { getMyOrders } from '../services/api';
-
 const STATUS_COLORS = {
   'Pending': 'warning', 'Confirmed': 'info', 'Packed': 'info',
   'Shipped': 'info', 'Out for Delivery': 'info', 'Delivered': 'success', 'Cancelled': 'danger'
